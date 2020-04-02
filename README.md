@@ -1,0 +1,1 @@
+# TakNotify.Provider.Smtp

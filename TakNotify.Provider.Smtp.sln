@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62A60756-4409-4A7E-9FBA-260B56575BBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakNotify.Provider.Smtp", "src\TakNotify.Provider.Smtp\TakNotify.Provider.Smtp.csproj", "{19070A06-0CEC-401F-A13E-896B23F87EED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E3BF352-08C8-47FD-B08F-CC51CD7C8836}"
+	ProjectSection(SolutionItems) = preProject
+		build-test.ps1 = build-test.ps1
+		build.ps1 = build.ps1
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5E1BED59-DA4B-4E9D-B660-62FA3A21FC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakNotify.Provider.Smtp.Test", "test\TakNotify.Provider.Smtp.Test\TakNotify.Provider.Smtp.Test.csproj", "{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Debug|x64.Build.0 = Debug|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Debug|x86.Build.0 = Debug|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Release|x64.ActiveCfg = Release|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Release|x64.Build.0 = Release|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Release|x86.ActiveCfg = Release|Any CPU
+		{19070A06-0CEC-401F-A13E-896B23F87EED}.Release|x86.Build.0 = Release|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Debug|x64.Build.0 = Debug|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Debug|x86.Build.0 = Debug|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Release|x64.ActiveCfg = Release|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Release|x64.Build.0 = Release|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Release|x86.ActiveCfg = Release|Any CPU
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19070A06-0CEC-401F-A13E-896B23F87EED} = {62A60756-4409-4A7E-9FBA-260B56575BBE}
+		{B7634DA3-2B01-4DED-A3FA-DA137E0216A4} = {5E1BED59-DA4B-4E9D-B660-62FA3A21FC6A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77C560F9-3D54-4A55-8640-7ECA8FA11208}
+	EndGlobalSection
+EndGlobal

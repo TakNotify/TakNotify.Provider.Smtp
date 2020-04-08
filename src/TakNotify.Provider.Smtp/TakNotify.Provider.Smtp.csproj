@@ -17,11 +17,11 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionPrefix>1.1.0</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TakNotify" Version="1.0.0.2" />
+    <PackageReference Include="TakNotify" Version="1.1.0" />
   </ItemGroup>
 
 </Project>

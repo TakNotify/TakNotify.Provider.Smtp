@@ -28,8 +28,8 @@ namespace TakNotify
         /// <summary>
         /// Instantiate the <see cref="SmtpProvider"/>
         /// </summary>
+        /// <param name="smtpClient">The SMTP Client</param>
         /// <param name="loggerFactory">The logger factory</param>
-        /// <param name="smtpClient">The SMT Client</param>
         public SmtpProvider(ISmtpClient smtpClient, ILoggerFactory loggerFactory)
             : base(smtpClient.Options, loggerFactory)
         {

@@ -5,6 +5,9 @@ using NetMail = System.Net.Mail;
 
 namespace TakNotify
 {
+    /// <summary>
+    /// The SMTP client
+    /// </summary>
     public class SmtpClient : NetMail.SmtpClient, ISmtpClient
     {
         /// <summary>
@@ -77,6 +80,11 @@ namespace TakNotify
         /// </summary>
         public SmtpProviderOptions Options { get; }
 
+        /// <summary>
+        /// Create an instance of <see cref="SmtpClient" />
+        /// </summary>
+        /// <param name="smtpOptions"></param>
+        /// <returns></returns>
         public static SmtpClient Create(SmtpProviderOptions smtpOptions)
         {
             return new SmtpClient(

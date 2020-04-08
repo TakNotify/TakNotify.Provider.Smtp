@@ -2,6 +2,9 @@
 // Licensed under the MIT License.
 namespace TakNotify
 {
+    /// <summary>
+    /// The constants for <see cref="SmtpProvider" />
+    /// </summary>
     public static class SmtpProviderConstants
     {
         /// <summary>

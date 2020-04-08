@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 
 namespace TakNotify
 {
+    /// <summary>
+    /// The extensions for <see cref="INotification"/>
+    /// </summary>
     public static class NotificationExtension
     {
         /// <summary>

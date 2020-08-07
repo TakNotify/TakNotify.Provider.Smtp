@@ -79,7 +79,7 @@ namespace TakNotify
         public List<string> BCCAddresses { get; set; }
 
         /// <summary>
-        /// The <b>FROM</b> address of the email
+        /// The <b>FROM</b> address of the email. If empty, the <see cref="SmtpProviderOptions.DefaultFromAddress"/> will be used instead
         /// </summary>
         public string FromAddress { get; set; }
 

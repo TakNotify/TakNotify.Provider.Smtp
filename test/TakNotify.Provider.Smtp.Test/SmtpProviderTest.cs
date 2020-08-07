@@ -80,5 +80,45 @@ namespace TakNotify.Provider.Smtp.Test
             _logger.VerifyLog(LogLevel.Debug, endMessage, Times.Never());
 
         }
+
+        [Fact]
+        public async void Send_WithDefaultFromAddress_Success()
+        {
+            _smtpClient.Setup(client => client.SendMailAsync(It.IsAny<MailMessage>()))
+                .Returns(Task.CompletedTask);
+
+            var provider = new SmtpProvider(
+                new SmtpProviderOptions { DefaultFromAddress = "sender@example.com" }, 
+                _smtpClient.Object, 
+                _loggerFactory.Object);
+
+            var message = new EmailMessage
+            {
+                ToAddresses = new List<string> { "user@example.com" },
+                Subject = "Test Email"
+            };
+
+            var result = await provider.Send(message.ToParameters());
+
+            Assert.True(result.IsSuccess);
+            Assert.Empty(result.Errors);
+        }
+
+        [Fact]
+        public async void Send_WithoutFromAddress_ReturnError()
+        {
+            var provider = new SmtpProvider(_smtpClient.Object, _loggerFactory.Object);
+
+            var message = new EmailMessage
+            {
+                ToAddresses = new List<string> { "user@example.com" },
+                Subject = "Test Email"
+            };
+
+            var result = await provider.Send(message.ToParameters());
+
+            Assert.False(result.IsSuccess);
+            Assert.Equal("From Address should not be empty", result.Errors[0]);
+        }
     }
 }

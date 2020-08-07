@@ -12,6 +12,7 @@ namespace TakNotify
         internal static string Parameter_Username = $"{SmtpProviderConstants.DefaultName}_{nameof(Username)}";
         internal static string Parameter_Password = $"{SmtpProviderConstants.DefaultName}_{nameof(Password)}";
         internal static string Parameter_UseSSL = $"{SmtpProviderConstants.DefaultName}_{nameof(UseSSL)}";
+        internal static string Parameter_DefaultFromAddress = $"{SmtpProviderConstants.DefaultName}_{nameof(DefaultFromAddress)}";
 
         /// <summary>
         /// Instantiate the <see cref="SmtpProviderOptions"/>
@@ -23,6 +24,7 @@ namespace TakNotify
             Parameters.Add(Parameter_Username, "");
             Parameters.Add(Parameter_Password, "");
             Parameters.Add(Parameter_UseSSL, false);
+            Parameters.Add(Parameter_DefaultFromAddress, "");
         }
 
         /// <summary>
@@ -68,6 +70,15 @@ namespace TakNotify
         {
             get => bool.Parse(Parameters[Parameter_UseSSL].ToString());
             set => Parameters[Parameter_UseSSL] = value;
+        }
+
+        /// <summary>
+        /// The default "From Address" that will be used if the <see cref="EmailMessage.FromAddress"/> is empty
+        /// </summary>
+        public string DefaultFromAddress
+        {
+            get => Parameters[Parameter_DefaultFromAddress].ToString();
+            set => Parameters[Parameter_DefaultFromAddress] = value;
         }
     }
 }

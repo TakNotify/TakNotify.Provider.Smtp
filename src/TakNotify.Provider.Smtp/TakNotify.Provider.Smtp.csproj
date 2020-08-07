@@ -5,7 +5,7 @@
     <LangVersion>8.0</LangVersion>
     <Summary>The SMTP Provider for TakNotify library</Summary>
     <Description>The SMTP Provider for TakNotify library</Description>
-    <Authors>Frandi Dwi</Authors>
+    <Authors>frandi-dwi</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <RepositoryUrl>https://github.com/TakNotify/TakNotify.Provider.Smtp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -17,11 +17,11 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <VersionPrefix>1.1.0</VersionPrefix>
+    <VersionPrefix>1.2.0</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TakNotify" Version="1.1.0" />
+    <PackageReference Include="TakNotify" Version="1.1.1" />
   </ItemGroup>
 
 </Project>

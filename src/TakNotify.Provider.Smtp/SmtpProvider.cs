@@ -48,6 +48,7 @@ namespace TakNotify
             : base(smtpOptions.Value, loggerFactory)
         {
             _smtpClient = SmtpClient.Create(smtpOptions.Value);
+            _smtpOptions = smtpOptions.Value;
         }
 
         /// <summary>
